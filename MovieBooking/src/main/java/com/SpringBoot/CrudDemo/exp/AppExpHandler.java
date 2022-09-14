@@ -12,7 +12,7 @@ import java.util.NoSuchElementException;
 
 @RestControllerAdvice
 public class AppExpHandler {
-    //@ResponseStatus(HttpStatus.BAD_REQUEST)
+
     @ExceptionHandler(NoSuchElementException.class)
     public ErrorDetails handler(NoSuchElementException ex){
         ErrorDetails errorDetails=new ErrorDetails();
